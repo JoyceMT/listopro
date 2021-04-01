@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div id="candidate-container">
+    <div class="row">
+      <div class="col-lg-2 col-md-4 col-s-12 align-items-center avatar">
+        <img class="avatar-bordered" alt="avatar-bordered" src="https://avatars.githubusercontent.com/u/66332712?v=4">
+      </div>
+      <div class="col-lg-10 col-md-8 col-s-12 pl-5">
+        <h1 class="greeting-title">¡Hola, {{ candidate.name }}!</h1>
+        <p class="greeting-content">Estamos constantemente verificando si hay vacantes compatibles con tu perfil. Si tienes dudas de cómo funciona Listopro da <a href="" class="">click aquí</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+      <p><strong>¡Felicidades!</strong> Tienes 1 invitación nueva</p>
+      <p><a href="http://127.0.0.1:8000/applications">Ver Invitación</a></p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-8">
+        <div class="about-me">
+          <h2>Resumen Profesional</h2>
+          <hr>
+          <p>I have 5 years experience as a front-end developer. I am looking for a job where I can learn from others.</p>
+        </div>
+
+        <div class="experience-container">
+          <h2>Experiencia Laboral</h2>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <div class="cv-dates">
+                <span>2020 - 2021 </span>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="cv-category">
+                <h4>Front-end Developer at</h4>
+                <p>Moons</p>
+              </div>
+              <div class="cv-category">
+                <h4>Developed responsive webpages.</h4>
+                <p>Mexico City, Mexico <span>| Feb 2020 - Currently</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <div class="cv-dates">
+                <span>2019 - 2020 </span>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="cv-category">
+                <h4>Web Developer at</h4>
+                <p>JW Agency</p>
+              </div>
+              <div class="cv-category">
+                <h4>Assisted the web designer process including testing and updating a variety of sites.</h4>
+                <p>Mexico City, Mexico <span>| Dic 2019 - Jan 2020</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <h2>Educación</h2>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <div class="cv-dates">
+                <span>2020 - 2021 </span>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="cv-category">
+                <h4>Web Development</h4>
+                <p>Master</p>
+              </div>
+              <div class="cv-category">
+                <h4>Le Wagon</h4>
+                <p>Mexico City, Mexico <span>| Dec 2019 a Jun 2020</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <h2>Skills</h2>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <p>HTML</p>
+            </div>
+            <div class="col-4">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="col-2">
+              <p>CSS</p>
+            </div>
+            <div class="col-4">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="col-xl-4">
+        <div class="cv-completed-container">
+          <div class="cv-completed-header">
+            <h2>Completa tu CV</h2>
+            <h2>76% completado</h2>
+          </div>
+          <div class="row completed-task">
+            <div class="col-8 text-left">
+              <p>Sincroniza tu Linkedin</p>
+            </div>
+            <div class="col-4 text-right">
+              <p>+15 pts</p>
+            </div>
+          </div>
+          <div class="row completed-task">
+            <div class="col-8 text-left">
+              <p>Agrega tu CV en español</p>
+            </div>
+            <div class="col-4 text-right">
+              <p>+5 pts</p>
+            </div>
+          </div>
+          <div class="row completed-task">
+            <div class="col-8 text-left">
+              <p>Agrega tu CV en inglés</p>
+            </div>
+            <div class="col-4 text-right">
+              <p>+10 pts</p>
+            </div>
+          </div>
+          <div class="row completed-task">
+            <div class="col-8 text-left">
+              <p>Agrega un Portafolio</p>
+            </div>
+            <div class="col-4 text-right">
+              <p>+5 pts</p>
+            </div>
+          </div>
+          <div class="row completed-task">
+            <div class="col-8 text-left">
+              <p>Agrega un Fortaleza</p>
+            </div>
+            <div class="col-4 text-right">
+              <p>+2 pts</p>
+            </div>
+          </div>
+          <div class="questions-task">
+            <p>Te interesaría trabajar en una startup? Por qué?</p>
+            <p><input type="text"></p>
+            <p><button class="btn-pry">Siguiente</button></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
+

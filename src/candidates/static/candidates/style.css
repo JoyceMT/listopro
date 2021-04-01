@@ -1,0 +1,233 @@
+#candidate-container {
+  background-color: white;
+  width: 940px;
+  border-radius: 4px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.profile-picture {
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+
+.avatar-bordered {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+  align-items: center;
+}
+
+.greeting-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #37D19A;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.greeting-content {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #596E8D;
+  line-height: 22px;
+  text-align: left;
+}
+
+.about-me {
+  background-color: white;
+  padding: 30px;
+  margin-right: 2px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.about-me h2 {
+  letter-spacing: -0.6px;
+  font-size: 28px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.cv-title {
+  letter-spacing: -0.6px;
+  font-size: 28px;
+}
+
+.experience-container {
+  background-color: white;
+  padding: 30px;
+  margin-right: 2px;
+  margin-top: 30px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.experience-container h2 {
+  letter-spacing: -0.6px;
+  font-size: 28px;
+}
+
+.cv-dates {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  font-size: 13px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #37D19A;
+}
+
+.cv-dates-container {
+  width: 20%;
+  text-align: left;
+  display: flex;
+}
+
+.cv-details-container {
+  width: 80%;
+  text-align: left;
+  display: flex;
+}
+
+.cv-category {
+  font-weight: normal;
+  line-height: 5px;
+}
+
+.cv-category h4 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.cv-category p {
+  color: #33BF54;
+  margin-bottom: 30px;
+}
+
+.cv-category span {
+  color: #707070;
+  margin-bottom: 30px;
+}
+
+.cv-completed-container {
+  background: linear-gradient(180deg, #33BF54 0%, #37D19A 100%);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.cv-completed-header {
+  color: white;
+  padding: 15px;
+  letter-spacing: -0.6px;
+}
+
+.completed-task {
+  background: #F9F9FB 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 4px #00000019;
+  border-radius: 7px;
+  opacity: 1;
+  cursor: pointer;
+  margin: 10px;
+  color: #707070;
+  align-items: left;
+  padding: 15px;
+}
+
+.completed-task p {
+  margin-top: 0px;
+}
+
+.questions-task {
+  background: #F9F9FB 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 4px #00000019;
+  border-radius: 7px;
+  opacity: 1;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  color: #707070
+}
+
+.questions-task p {
+  padding: 5px;
+  color: #707070;
+}
+
+.fa-star {
+  color: #33BF54;
+}
+
+@media screen and (min-width: 400px) {
+  #candidate-container {
+    width: 460px;
+  }
+
+  .avatar img {
+    vertical-align: middle;
+  }
+
+  .cv-category h4 {
+    padding-left: 20px;
+  }
+
+  .cv-category p {
+    padding-left: 20px;
+    line-height: 20px;
+  }
+
+  .cv-completed-container {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #candidate-container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #candidate-container {
+    width: 660px;
+  }
+
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #candidate-container {
+    width: 720px;
+  }
+
+  .cv-completed-container {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #candidate-container {
+    width: 940px;
+  }
+}
+

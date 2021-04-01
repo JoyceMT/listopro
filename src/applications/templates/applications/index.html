@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="wrapper">
+    <div class="main-container">
+    <div class="container white">
+      <h1 class="container-title">Invitaciones</h1>
+      <div class="row invite-card-top">
+        <div class="col-lg-8 col-s-12">
+          <div class="invite-card-text">
+          {% for application in application_objects %}
+            <h4> {{ application.job.title }} </h4>
+            <div class="invite-card-details">
+              <p><span>Localidad:</span> {{ application.job.location }}</p>
+              <p><span>Salario:</span> {{ application.job.salary }}</p>
+            </div>
+            <div class="invite-card-description">
+              <p> {{ application.job.job_description | truncatewords:30 }} </p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-lg-4 col-s-12 invite-cta">
+          <button class="btn-pry">Aceptar Invitación</button>
+        </div>
+      </div>
+      <div class="row invite-card-bottom">
+        <div class="col-12">
+          <div class="readmore">
+            <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Leer Más</a>
+            <div id="example" class="more">
+              <div class="text">
+                {% for application in application_objects %}
+                  <div class="job-container">
+                    <h1>Acerca del trabajo</h1>
+                    <div class="job-details">
+                      <h4>Descripción de la empresa:</h4>
+                      <p> {{ application.job.company_description }} </p>
+                    </div>
+                    <div class="job-details">
+                      <h4>Sobre el trabajo:</h4>
+                      <p> {{ application.job.job_description |linebreaks }} </p>
+                    </div>
+                    <div class="job-details">
+                      <h4>Requisitos</h4>
+                      <p> {{ application.job.requirements |linebreaks }} </p>
+                    </div>
+                      <a class="btn btn-block btn-pry" href="/app/preferencias">Aceptar Invitación</a>
+                  </div>
+                {% endfor %}
+              </div>
+              <p><a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Leer Menos</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="container white">
+      <h1 class="container-title">Procesos Abiertos</h1>
+      <div class="procesos-abiertos">
+        <div class="procesos-header">
+          <h2>Aún no tienes procesos abiertos</h2>
+          <p>Para incrementar las posibilidades que una empresa se interese en tu perfil:</p>
+        </div>
+          <div class="bar-helper">
+            <div class="row">
+              <div class="col-md-8">
+                Completa tu perfil para hacer más match en empleos top
+              </div>
+              <div class="col-md-4">
+                <a class="btn btn-block btn-pry" href="/app/preferencias">Ver Perfil</a>
+              </div>
+            </div>
+          </div>
+          <div class="bar-helper">
+            <div class="row">
+              <div class="col-md-8">
+                Actualiza tus preferencias y configura el empleo de tus sueños
+              </div>
+              <div class="col-md-4">
+                <a class="btn btn-block btn-pry" href="/app/preferencias">Actualizar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+{% endblock %}
+

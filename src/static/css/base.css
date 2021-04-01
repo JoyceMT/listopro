@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  background: #FAFAFC;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#mainContainer {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.btn-pry {
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.24px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  background: transparent linear-gradient(180deg, #33BF54 0%, #38D6AC 100%) 0% 0% no-repeat padding-box;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+a,
+a:hover {
+  color: #33BF54;
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.input-group-btn .btn {
+  padding: 6px 12px;
+}
+
+.listopro-color {
+  color: #33BF54;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  #header {
+    padding-top: 70px;
+    min-height: 130px;
+  }
+
+  .name-header {
+    font-size: 30px;
+  }
+}
+
+.m-t-sm {
+  margin-top: 10px;
+}
+
+.m-t-m {
+  margin-top: 30px;
+}
+
+.m-t-md {
+  margin-top: 40px;
+}
+
+.m-t-lg {
+  margin-top: 60px;
+}
+
+.m-t-xl {
+  margin-top: 80px;
+}
+
+.m-t-none {
+  margin-top: 0;
+}
+
+.m-b-md {
+  margin-bottom: 40px;
+}
+
+
+.m-b-m {
+  margin-bottom: 30px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-sm {
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,33 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'jobs/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="job-container">
+      <h1>Acerca del trabajo</h1>
+      <div class="job-details">
+        <h4>Descripción de la empresa:</h4>
+        <p> {{ job.company_description }} </p>
+      </div>
+      <div class="job-details">
+        <h4>Sobre el trabajo:</h4>
+        <p> {{ job.job_description |linebreaks }} </p>
+      </div>
+      <div class="job-details">
+        <h4>Requisitos</h4>
+        <p> {{ job.requirements |linebreaks }} </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

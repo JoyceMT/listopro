@@ -1,0 +1,69 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+
+
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #707070;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+  background-color: #F9F9FB;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.job-container {
+  width: 1000px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 40px 80px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+}
+
+.job-details {
+  text-align: justify;
+  padding: 20px 0px;
+}
+
+.job-container h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #596E8D;
+  font-weight: bold;
+}
+
+.job-container h4 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #596E8D;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .job-container {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-container {
+    max-width: 70%;
+  }
+}

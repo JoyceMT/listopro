@@ -1,0 +1,53 @@
+{% load static %}
+
+<div id="pre-footer"></div>
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <div class="form-group">
+          <img src="{% static 'imgs/logo.png' %}" class="footer-logo">
+        </div>
+
+        <div class="visible-xs visible-sm form-group">
+          <a href="mailto:hola@listopro.com" class="color-listopro">
+            <p>hola@listopro.com</p>
+          </a>
+        </div>
+        <small>© 2021 Listopro S.A.PI.</small>
+      </div>
+      <div class="col-md-offset-1 col-md-3 hidden-xs hidden-sm">
+        <h2>Contáctanos</h2>
+        <div class="contactanos">
+          <i class="fa fa-whatsapp"></i>
+          <a target="_blank" href="http://api.whatsapp.com/send?phone=5215624299307&text=Hola%20Listopro">
+            5215624299307
+          </a>
+        </div>
+        <div class="contactanos">
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:hola@listopro.com">
+            hola@listopro.com
+          </a>
+        </div>
+        <div class="contactanos">
+          Siguenos
+          <a href="https://www.linkedin.com/company/listopro">
+            <img height="20" src="{% static 'imgs/linkedin.png' %}">
+          </a>
+          <a href="https://www.instagram.com/listoprolatam/">
+            <img height="20" src="{% static 'imgs/instagram.png' %}">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-offset-1 col-md-3 hidden-xs hidden-sm">
+        <h2>Quick links</h2>
+        <p><a href="/login/">Iniciar Sesión</a></p>
+        <p><a href="/talento-digital/">Talento Digital</a></p>
+        <p><a href="/sobre-nosotros">Conocenos</a></p>
+        <p><a href="/trabajador/preguntas-frecuentes">Preguntas frecuentes</a></p>
+        <p><a href="/aviso-de-privacidad/">Aviso de privacidad</a></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,223 @@
+{% load bootstrap4 %}
+
+@font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+}
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #707070;
+}
+
+.wrapper {
+  background-color: #F9F9FB;
+  text-align: center;
+}
+
+.main-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.white {
+  max-width: 1000px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0px 5px 10px #00000029;
+}
+
+.container-title {
+  color: #33BF54;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.invite-card-top {
+  vertical-align: middle;
+  border-radius: 20px 20px 0px 0px;
+  margin: 50px 50px 0px 50px;
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  border-left: 1px solid rgb(243, 241, 241, 0.8);
+  border-right: 1px solid rgb(243, 241, 241, 0.8);
+  border-top: 1px solid rgb(243, 241, 241, 0.8);
+  border-bottom: none;
+  box-shadow: 0px 5px 10px #00000029;
+}
+
+.invite-card-bottom {
+  border-radius: 0px 0px 50px 50px;
+  margin: 0px 50px 50px 50px;
+  padding: 20px;
+  background-color: #F9F9FB;
+  border: 1px solid rgb(243, 241, 241, 0.8);
+  box-shadow: 0px 5px 10px #00000029;
+}
+
+.invite-card-text {
+  text-align: left;
+  padding: 30px 30px 0px 30px;
+}
+
+.invite-card-details p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.invite-card-details span {
+  color: #33BF54;
+  font-weight: bold;
+}
+
+.invite-card-description {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.invite-cta {
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: column;
+  border-left: 1px solid rgb(243, 241, 241, 0.8);
+}
+
+.invite-cta button {
+  align-self: center;
+}
+
+.readmore {
+  text-align: center;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.completed-task {
+  background: #F9F9FB 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 4px #00000019;
+  border-radius: 7px;
+  opacity: 1;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0px auto;
+  color: #707070;
+  align-items: center;
+  padding: 15px;
+}
+
+.procesos-abiertos {
+  width: 70%;
+  margin: 0px auto;
+}
+
+.container-title {
+  text-align: left;
+}
+
+.procesos-header {
+  padding: 30px 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.opportunities {
+  background: #F9F9FB 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 10px #00000029;
+  border-radius: 20px;
+  padding: 23px 23px 5px 23px;
+  margin-bottom: 20px;
+}
+
+.btn-pry {
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.24px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  background: transparent linear-gradient(180deg, #33BF54 0%, #38D6AC 100%) 0% 0% no-repeat padding-box;
+  margin-bottom: 20px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.bar-helper {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 10px #00000029;
+  border-radius: 20px;
+  padding: 23px 23px 5px 23px;
+  margin-bottom: 20px;
+}
+
+.more {
+  display: none;
+  padding-top: 10px;
+}
+
+a.showLink,
+a.hideLink {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-out;
+  background: transparent url('down.gif') no-repeat left;
+}
+
+a.hideLink {
+  background: transparent url('up.gif') no-repeat left;
+}
+
+.job-container {
+  max-width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  padding: 40px 80px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+}
+
+.job-details {
+  text-align: justify;
+  padding: 20px 0px;
+}
+
+.job-container h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #596E8D;
+  font-weight: bold;
+}
+
+.job-container h4 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #596E8D;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .job-container {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-container {
+    max-width: 70%;
+  }
+}
