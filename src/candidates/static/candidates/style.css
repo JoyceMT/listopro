@@ -130,6 +130,7 @@ hr {
   background: linear-gradient(180deg, #33BF54 0%, #37D19A 100%);
   border-radius: 15px;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .cv-completed-header {
@@ -177,11 +178,12 @@ hr {
 
 @media screen and (min-width: 400px) {
   #candidate-container {
-    width: 460px;
+    width: 440px;
   }
 
   .avatar img {
-    vertical-align: middle;
+    margin: auto;
+    display: block;
   }
 
   .cv-category h4 {
@@ -191,10 +193,6 @@ hr {
   .cv-category p {
     padding-left: 20px;
     line-height: 20px;
-  }
-
-  .cv-completed-container {
-    margin-top: 20px;
   }
 }
 
@@ -219,15 +217,15 @@ hr {
   #candidate-container {
     width: 720px;
   }
-
-  .cv-completed-container {
-    margin-top: 0px;
-  }
 }
 
 @media screen and (min-width: 1000px) {
   #candidate-container {
     width: 940px;
   }
+  .cv-completed-container {
+    margin-top: 0px;
+  }
 }
+
 
